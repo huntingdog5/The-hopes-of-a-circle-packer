@@ -8,11 +8,13 @@ class circlies():
         self.x = tempx
         self.y = tempy
         self.r = tempr
+        #taking rand vals from main file
         
     def display(self):
+        # Generate colors within rgb color space then create circle
         # no_stroke()
         ellipse_mode(mode='CENTER')
-        # fill(255)
+        # fill(255) 
         z = randrange(255)
         v = randrange(255)
         u = randrange(255)

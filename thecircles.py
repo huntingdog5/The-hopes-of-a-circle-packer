@@ -15,22 +15,24 @@ def draw():
     # no_loop()
      #background(157, 255, 255) pretty blue
     background(25)
-    a = random_gaussian(mean=400, std_dev=200)
-    b = random_gaussian(mean=300, std_dev=150)
-    c = random_gaussian(mean=100, std_dev=200)
-    
-    try:
-        New_Circlly = cr.circlies(a,b,c)
-    except:
-        print("A is",a,"B is",b,"C is",c)
-        print('error at defining values and making circle')
-        exit()
+    #make random values for each draw
+    a = randrange(30,770)
+    b = randrange(30,570)
+    c = randrange(20,200)
+    New_Circlly = cr.circlies(a,b,c)
+    New_Circlly.display()
+    # try:
+    #     New_Circlly = cr.circlies(a,b,c)
+    # except:
+    #     print("A is",a,"B is",b,"C is",c)
+    #     print('error at defining values and making circle')
+    #     exit()
         
-    try:
-        New_Circlly.display()
-    except:
-        print("A is",a,"B is",b,"C is",c)
-        print('error at display of circle')
-        exit()
+    # try:
+    #     New_Circlly.display()
+    # except:
+    #     print("A is",a,"B is",b,"C is",c)
+    #     print('error at display of circle')
+    #     exit()
 
 run(frame_rate=2)
